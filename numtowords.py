@@ -19,7 +19,7 @@ teens = ("ten", "eleven", "twelve", "thirteen", "fourteen",
 tens = ("", "", "twenty", "thirty", "forty", "fifty", "sixty",
         "seventy", "eighty", "ninety")
 
-print(''.join(map(str, num)))
+
 
 ans = []
 
