@@ -2,7 +2,7 @@
 
 #Write code to convert a given number into words.
 # For example, if “1234” is given as input, output should be 
-#“one thousand two hundred thirty four”.
+#“one thousand two hundred and thirty four”.
 
 try:
 	number=str(int(input('Enter number between 0-9999')))
@@ -21,7 +21,8 @@ try:
 
 
 	ans = []
-	f=0
+	f=0 # included to add "and"
+	
 	while not len(num) == 0:
 	    if len(num) == 4 and no !=0:       # Thousands
 	        if (num[0]==0):
@@ -54,7 +55,7 @@ try:
 	    else:
 	               # Ones
 	        ans.append(ones[num[0]])
-	        del(num[:])             # Ones
+	        del(num[:])             
 
 	print(" ".join(ans))
 
