@@ -29,8 +29,8 @@ print(px)
 # In[5]:
 
 
-ball = img[280:340, 330:390]
-img[273:333, 100:160] = ball
+ball = img[285:602,141:496]
+img[285:602, 596:951] = ball
 
 
 # In[ ]:
@@ -43,5 +43,5 @@ k=cv2.waitKey()
 while (1):
     if k== ord('x'):
         break
-cv2.destroyallwindows()        
+cv2.destroyAllWindows()        
 
