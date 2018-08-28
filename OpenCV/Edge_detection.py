@@ -27,9 +27,19 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.createTrackbar('Minimum','image',1,255,nothing)
 cv2.createTrackbar('Maximum','image',1,255,nothing)
 
+'''
+Parameters: 
+image – 8-bit input image.
+edges – output edge map; single channels 8-bit image, which has the same size as image .
+threshold1 – first threshold for the hysteresis procedure.
+threshold2 – second threshold for the hysteresis procedure.
+apertureSize – aperture size for the Sobel() operator.
+L2gradient – a flag, indicating whether a more accurate 
 
-
-
+The smallest value between threshold1 and 
+threshold2 is used for edge linking. The largest value is used to 
+find initial segments of strong edges
+'''
 
 
 
