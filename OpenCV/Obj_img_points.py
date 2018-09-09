@@ -15,6 +15,26 @@ import os
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 # prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
 
+
+
+'''criteria [It is the iteration termination criteria.When this criteria is satisfied,
+ algorithm iteration stops.Actually, it should be a tuple of 3 parameters.
+ They are( type, max_iter, epsilon ):]
+
+• 3.a - type of termination criteria 
+        [It has 3 flags as below:] 
+        cv2.TERM_CRITERIA_EPS - stop the algorithm iteration 
+        if specified accuracy, epsilon, is reached.
+         cv2.TERM_CRITERIA_MAX_ITER - stop the algorithm after the specified number of iterations, 
+         max_iter. cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER - 
+         stop the iteration when any of the above condition is met.
+
+• 3.b - max_iter - An integer specifying maximum number of iterations.
+• 3.c - epsilon - Required accuracy
+
+'''
+
+
 objp = np.zeros((6*7,3), np.float32)
 objp[:,:2] = np.mgrid[0:7,0:6].T.reshape(-1,2)
 
