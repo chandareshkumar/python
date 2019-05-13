@@ -7,6 +7,7 @@ possible delay is key to doing good research.
 
 Use Keras if you need a deep learning library that:
 
-Allows for easy and fast prototyping (through user friendliness, modularity, and extensibility). Supports both convolutional networks and recurrent networks, as well as combinations of the two. Runs seamlessly on CPU and GPU. Read the documentation at Keras.io.
+Allows for easy and fast prototyping (through user friendliness, modularity, and extensibility). Supports both convolutional networks and recurrent networks, as well as combinations of the two. Runs seamlessly on CPU and GPU. 
+Read the documentation at Keras.io.
 
 Keras is compatible with: Python 2.7-3.6.
