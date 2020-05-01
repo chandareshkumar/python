@@ -182,7 +182,18 @@ class LinkedList:
             curr_node = self.head
            
 
-            while curr_node.next is not None:
+            while True:
+                
+                
+                if curr_node.next == self.head:
+                    
+                    
+                    prev_node.next = self.head
+                    curr_node.next = None
+                    
+                    break
+                    
+                    
 
                 prev_node = curr_node
 
@@ -190,7 +201,6 @@ class LinkedList:
 
 
 
-            prev_node.next = None
     
             
             
